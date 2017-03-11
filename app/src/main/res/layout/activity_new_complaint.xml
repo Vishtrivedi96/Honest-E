@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sea_opt"
+    android:gravity="center"
+
+    tools:context="com.honeste.honest_e.NewComplaint">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_margin="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:background="@drawable/border"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:hint="Category:"
+                    android:inputType="text"
+                    android:letterSpacing="0.025"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/border"
+                >
+
+                <Spinner
+                    android:id="@+id/cat_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#fff"
+                    android:textSize="16dp" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:orientation="horizontal"
+                android:background="@drawable/border">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Add Sub Category:"
+                        android:textColor="#fff"
+                        android:textSize="16dp"
+                        android:inputType="text"
+                        android:letterSpacing="0.025" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                android:layout_marginBottom="5dp">
+
+
+                <EditText
+                    android:id="@+id/etsubcategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:fontFamily="sans-serif"
+                    android:hint="sub-cat here edit text"
+                    android:inputType="textMultiLine"
+                    android:letterSpacing="0.025"
+                    android:padding="12dp"
+                    android:scrollHorizontally="false"
+                    android:scrollbars="vertical"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:textSize="16dp"
+                    />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="16dp"
+                android:background="@drawable/border">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Complaint Description:"
+                    android:textColor="#fff"
+                    android:textSize="16dp"
+                    android:inputType="text"
+                    android:letterSpacing="0.025" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                >
+
+
+
+                <EditText
+                    android:id="@+id/etcomplaintdescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="73dp"
+                    android:background="#00000000"
+                    android:fontFamily="sans-serif"
+                    android:hint="Describe Your Complaint"
+                    android:inputType="textMultiLine"
+                    android:letterSpacing="0.025"
+                    android:padding="12dp"
+                    android:scrollHorizontally="false"
+                    android:scrollbars="vertical"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:textSize="16dp"
+                    style="@android:style/Widget.DeviceDefault.Light.EditText" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:paddingRight="50dp"
+                android:weightSum="1">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="16dp"
+                android:background="@drawable/border">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Complaint Location:"
+                    android:textColor="#fff"
+                    android:textSize="16dp"
+                    android:inputType="text"
+                    android:letterSpacing="0.025" />
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/border"
+                android:layout_marginBottom="5dp">
+
+
+                <EditText
+                    android:id="@+id/etcomplaintlocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:hint="Add Complaint Location"
+                    android:inputType="text"
+                    android:letterSpacing="0.025"
+                    android:padding="12dp"
+                    android:textColor="#fff"
+                    android:fontFamily="sans-serif"
+                    android:textColorHint="#fff"
+                    android:textSize="16dp"
+                    />
+
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/border">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:hint="Area"
+                    android:inputType="text"
+                    android:letterSpacing="0.025"
+                    android:padding="12dp"
+                    android:textColor="#fff"
+                    android:textColorHint="#fff"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:background="@drawable/border">
+
+                <Spinner
+                    android:id="@+id/comp_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#fff"
+                    android:paddingRight="50dp"
+                    android:textSize="16dp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#fff" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/postcomplaint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/border"
+                    android:fontFamily="sans-serif"
+                    android:letterSpacing="0.025"
+                    android:onClick="OnPost"
+                    android:padding="10dp"
+                    android:text="Post Complaint"
+                    android:textAlignment="center"
+                    android:textColor="#fff"
+                    android:textSize="16dp"
+                    android:layout_marginBottom="20dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
